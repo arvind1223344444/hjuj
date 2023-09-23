@@ -1,0 +1,110 @@
+.section.section_slider{
+	background-color:#f7f9fb;
+	width:100%;
+	height:auto;
+	position:relative;
+	overflow:hidden;
+	padding: 30px;
+}
+.latest_news_update{
+	height:100%!important;
+}
+
+.section-full.content-inner .owl-nav.disabled {
+    display: none;
+}
+.cpicon .icon-xl i {
+    font-size: 51px;
+    line-height: 80px;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: block;
+  position: relative;
+  transform: translateY(20%); /* Start from the bottom */
+  animation: marquee 10s linear infinite;
+}
+.marquee-wrapper:hover .marquee {
+  animation-play-state: paused !important;
+}
+.box-bg.active .text-primary, .box-bg.active .icon-content .tilte, .box-bg.active .icon-content p, .box-bg.active .site-button-link {
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+@keyframes marquee {
+ 0% {
+    transform: translateY(20%);
+  }
+
+  90% {
+    transform: translateY(-100%);
+  }
+  
+   100% {
+    transform: translateY(-100%);
+  }
+ 
+ /*  100% {
+    transform: translateY(-100%);
+  }*/
+  
+ 
+}
+
+/*
+ 0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }*/
+
+.bg-red-color{
+	background-color:#e12454;
+	color:#fff;
+}
+.text-red-color{
+	color:#e12454;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* width: 15%; */
+    color: #000;
+    text-align: center;
+    opacity: 0;
+}
+
+.icon-bx-wraper.icon_wrapper_bg{
+	background-color:#f3f6ff;
+	transition: width 0.3s ease;
+	position:relative;
+}
+.icon-bx-wraper.icon_wrapper_bg:hover {
+  width: 100%; 
+}
+.icon-bx-wraper.icon_wrapper_bg::before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:2px;
+	background-color:#e12454;
+}
